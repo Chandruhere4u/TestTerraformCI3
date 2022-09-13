@@ -6,10 +6,12 @@
 
 provider "aws" {
   region = "us-east-1"
-  assume_role {
-    role_arn = "arn:aws:iam::350978175498:role/Test-Git-ECS-Role"
-    session_name = "TestTerrformAssumerole"
-  }
+#   assume_role {
+#     role_arn = "arn:aws:iam::350978175498:role/Test-Git-ECS-Role"
+#     session_name = "TestTerrformAssumerole"
+#   }
+  AWS_ACCESS_KEY_ID="AKIAVDN7N6IFNQ7QHD4L"
+  AWS_SECRET_ACCESS_KEY="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"
 }
 
   # module "s3" {
